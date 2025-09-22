@@ -317,6 +317,24 @@ h6 {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
+
+/* OUR DOCTOR SECTION */
+.member-info p {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .member-info {
+    text-align: center !important;
+  }
+  .member-info p {
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: justify;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
