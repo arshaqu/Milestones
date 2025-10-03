@@ -438,7 +438,6 @@ h6 {
 .team .member:hover .pic img {
   transform: scale(1.05);
 }
-
 /* Member Details - Flexible height */
 .team .member .member-details {
   padding: 25px;
@@ -452,19 +451,19 @@ h6 {
 .team .member .member-details h4 {
   font-size: 20px;
   color: #2c3e50;
-  margin-bottom: 8px;
+  margin-bottom: 12px; /* slightly increased spacing for underline clarity */
   font-weight: 700;
   position: relative;
-  display: inline-block;
-  padding-bottom: 10px;
+  display: inline-block; /* underline sticks to text width */
+  padding-bottom: 8px;
 }
 
 .team .member .member-details h4::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 50px;
+  left: 0; /* underline starts from the left */
+  width: 60px; /* adjust underline length */
   height: 3px;
   background: linear-gradient(90deg, #bca65d, #d4af37);
   border-radius: 2px;
@@ -475,7 +474,7 @@ h6 {
   color: #7f8c8d;
   font-size: 13px;
   font-weight: 600;
-  margin: 12px 0 15px;
+  margin: 10px 0 15px;
   line-height: 1.6;
   font-style: normal;
 }
@@ -488,6 +487,7 @@ h6 {
   margin-bottom: auto;
   flex-grow: 1;
 }
+
 
 /* Decorative Elements */
 .team .member::before {
@@ -521,7 +521,6 @@ h6 {
     height: 140px;
   }
 }
-
 @media (max-width: 768px) {
   .team.section {
     padding: 60px 0;
@@ -555,12 +554,12 @@ h6 {
 
   .team .member .member-details {
     padding: 25px;
-    text-align: center;
+    text-align: center; /* text centered */
   }
 
   .team .member .member-details h4::after {
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;   /* underline starts from left */
+    transform: none; /* remove centering */
   }
 
   .team .member .member-details p {
